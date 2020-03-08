@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evolux</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link pl-4 pr-4" href="#">Home<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link pl-4 pr-4" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link pl-4 pr-4" href="#">Productos</a></li>
+            </ul>
+        </div>
+        <a class="navbar-brand mx-4" href="#">
+            <img src="./img/logo.svg" class="d-inline-block align-top" alt="Evolux">
+        </a>
+            <div class="navbar-collapse collapse justify-content-start" id="navbarNav2">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item"><a class="nav-link pl-4 pr-4" href="#">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link pl-4 pr-4" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link pl-4 pr-4" href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+  <div id="app">
+    <!-- <div class="loader position-fixed bg-white d-block w-100 h-100" :class="{'animated fadeOut': !loader}"></div> -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 sqs-col-6 col animated" :class="{fadeInLeft: !loader}">
+                    <div class="product--image mb-3">
+                        <div><img src="./img/01.png" alt="Producto" class="img-fluid"></div>
+                        <div><img src="./img/02.png" alt="Producto" class="img-fluid"></div>
+                        <div><img src="./img/03.png" alt="Producto" class="img-fluid"></div>
+                        <div><img src="./img/04.png" alt="Producto" class="img-fluid"></div>
+                        <div><img src="./img/05.png" alt="Producto" class="img-fluid"></div>
+                    </div>
+                    <div class="product--thumbnails">
+                        <div class="product--thumb"><img src="./img/01.png" alt="Producto" class="img-fluid"></div>
+                        <div class="product--thumb"><img src="./img/02.png" alt="Producto" class="img-fluid"></div>
+                        <div class="product--thumb"><img src="./img/03.png" alt="Producto" class="img-fluid"></div>
+                        <div class="product--thumb"><img src="./img/04.png" alt="Producto" class="img-fluid"></div>
+                        <div class="product--thumb"><img src="./img/05.png" alt="Producto" class="img-fluid"></div>
+                    </div>
+
+                </div>
+                <div class="col-6 sqs-col-6 col animated" :class="{fadeInRight: !loader}">
+                    <h2 class="product--title">WS 3W</h2>
+                    <p class="product--desc">Tamaño, versatilidad y estética.</p>
+                    <p class="product--desc"><i>Luminaria de diseño liviano y elegante, por sus dimensiones compactas resulta un elemento discreto ideal para dirigir la atención del espectador y adaptarse a espacios reducidos de medidas mínimas o mobiliario.</i></p>
+                    
+                    <div class="row">
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/on-off-01.jpg" alt="on-off-01" class="img-fluid">
+                        </div>
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/domotics-01.jpg" alt="domotics-01" class="img-fluid">
+                        </div>
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/white-reflective-01.jpg" alt="white-reflective-01" class="img-fluid">
+                        </div>
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/high-cri-01.jpg" alt="High" class="img-fluid">
+                        </div>
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/led-smd-2835-01.jpg" alt="led-smd-2835-01" class="img-fluid">
+                        </div>
+                        <div class="col-2 sqs-col-6 col">
+                            <img src="./img/tecnologias/light-01.jpg" alt="light-01" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a href="https://evolux.cl/tecnologias" class="btn btn-warning mt-5">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="animated" :class="{fadeInDown: !loader}">
+        <div class="container">
+            <div class="row">
+                <div class="col mb-5">
+                    <tabs>
+                        <tab name="Características" :selected="true">
+                            <table>
+                                <tbody>
+                                    <tr><td><b>Cuerpo</b></td> <td>Aluminio</td></tr> 
+                                    <tr><td><b>Conexión</b></td> <td>Driver</td></tr> 
+                                    <tr><td><b>Voltaje</b></td> <td>170-265V AC</td></tr> 
+                                    <tr><td><b>FP</b></td> <td>0.9</td></tr> 
+                                    <tr><td><b>THDi</b></td> <td>Menor a 20%</td></tr> 
+                                    <tr><td><b>LED</b></td> <td>Edison 2835</td></tr> 
+                                    <tr><td><b>T° Función</b></td> <td>-20C° ~ +45C°</td></tr> 
+                                    <tr><td><b>Dimmer</b></td> <td>No Compatible</td></tr> 
+                                    <tr><td><b>Vida Útil </b></td> <td>35.000Hrs</td></tr>
+                                </tbody>
+                            </table>
+                        </tab>
+                        <tab name="Ventajas">
+                            <table>
+                                <tbody>
+                                    <tr><td><b>Diseño</b></td> <td>Liviano y compacto </td></tr> 
+                                    <tr><td><b>Eficiencia LED</b></td> <td>Hasta 110 Lm/W </td></tr> 
+                                    <tr><td><b>Vs otros LEDs</b></td> <td>Hasta 40% Ahorro </td></tr> 
+                                    <tr><td><b>Vs Otras Tecn.</b></td> <td>Hasta 90% Ahorro </td></tr> 
+                                    <tr><td><b>Iluminación</b></td> <td>Uniforme </td></tr> 
+                                    <tr><td><b>Instalación</b></td> <td>Sobrepuesto o Empotrado </td></tr> 
+                                    <tr><td><b>Fuente de Luz</b></td> <td>No reemplazable </td></tr> 
+                                    <tr><td><b>Índice Protección</b></td> <td>IP44 </td></tr> 
+                                    <tr><td><b>Ausencia</b></td> <td>IR y UV </td></tr> 
+                                    <tr><td><b>Garantía</b></td> <td>2 años </td></tr>
+                                </tbody>
+                            </table>
+                        </tab>
+                        <tab name="Aplicaciones">
+                            <ul>
+                                <li>Hoteles</li>
+                                <li>Restaurantes</li>
+                                <li>Oficinas</li>
+                                <li>Comercios</li>
+                                <li>Baños</li>
+                                <li>Hogares</li>
+                                <li>Mueblería</li>
+                            </ul>
+                        </tab>
+                        <tab name="Descargas">
+                          <p>Aquí encontrarás toda la información de nuestros productos. Archivos Fotométricos IES para simulaciones DIALUX, manual de instalación e información técnica con fotos. Si necesitas mayor información o asesoría no dudes en contactarnos y un experto te ayudará.</p>
+                          <div class="row">
+                              <div class="col sqs-col-4 span-4 d-flex justify-content-center"><a href="https://evolux.cl/s/EVOLUX-WS-3W.pdf" target="_blank" class="btn btn-warning sqs-block-button sqs-block-button-element--small">Ficha Técnica</a></div>
+                              <div class="col sqs-col-4 span-4 d-flex justify-content-center"><a href="https://evolux.cl/s/EVOLUX-WS-3W.pdf" target="_blank" class="btn btn-warning sqs-block-button sqs-block-button-element--small">Ficha Instalación</a></div>
+                              <div class="col sqs-col-4 span-4 d-flex justify-content-center"><a href="https://evolux.cl/s/" target="_blank" class="btn btn-warning sqs-block-button sqs-block-button-element--small">Archivos DIALUX</a></div>
+                          </div>
+                        </tab>
+                    </tabs>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Banner -->
+    <section class="product--banner" id="product--banner" :class="{'lightOn': light}">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 pt-5 mb-5 animated" :class="{fadeInLeft: bannerWaypoint}" >
+                    <h2 class="pt-5 mt-5">Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, doloremque?</p>
+                    <a href="https://evolux.cl/tecnologias" class="btn btn-warning mt-2">Más información</a>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <p>Presiona aquí</p>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn" :class="[lightSwitchOff, {'pulse-grow': !light}]" @click="light = true">ON</button>
+                                <button type="button" class="btn" :class="[lightSwitchOn, {'pulse-grow': !light}]" @click="light = false">OFF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 product--banner__img">
+                    <img src="./img/products/ws-w3-off.png" alt="w3s" class="img-fluid float-left animated" :class="[{fadeOut: light}, {fadeIn: !light}]">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Banner -->
+    <section class="product--banner__parallax py-5  parallax-window" id="product--banner__parallax" data-parallax="scroll" data-image-src="./img/banner-parallax.jpg">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 mb-5 animated" :class="{fadeInLeft: bannerWaypoint}" >
+                    <h2 class="pt-5 text-white">Óptica Avanzada</h2>
+                    <p class="text-white">Permite una mayor eficiencia lumínica debido a un mejor rebote interno.</p>
+                    <a href="https://evolux.cl/tecnologias" class="btn mt-2 text-white border border-white">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related projects -->
+    <section class="product--related-projects py-5 my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 mb-5">
+                    <h4>Proyectos Relacionados</h4>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-3">
+                        <img src="./img/proyectos/rectangle-1.png" alt="proyecto" class="img-fluid rounded">
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/proyectos/rectangle-2.png" alt="proyecto" class="img-fluid rounded">
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/proyectos/rectangle-3.png" alt="proyecto" class="img-fluid rounded">
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/proyectos/rectangle-4.png" alt="proyecto" class="img-fluid rounded">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</div>
+
+
+
+
+    <script src="js/scripts.js"></script>
